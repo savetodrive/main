@@ -1,0 +1,54 @@
+.intro-header {
+  color: $white;
+  font-weight: $font-normal;
+  position: relative;
+  text-align: center;
+
+  &::after {
+    content: '';
+    display: block;
+    border-bottom: 2px solid $brand-primary;
+    margin: 1.5rem auto;
+    position: relative;
+    width: 4rem;
+  }
+}
+
+@mixin text-color-variant($className, $color) {
+  #{$className} {
+    color: $color;
+  }
+
+  a#{$className} {
+    &:hover,
+    &:focus {
+      color: darken($color, 10%);
+    }
+  }
+}
+
+@include text-color-variant('.text-white', $white);
+@include text-color-variant('.text-muted', $gray-light);
+@include text-color-variant('.text-primary', $brand-primary);
+@include text-color-variant('.text-info', $brand-info);
+@include text-color-variant('.text-warning', $brand-warning);
+@include text-color-variant('.text-danger', $brand-danger);
+@include text-color-variant('.text-success', $brand-success);
+
+// Center text
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+// Semantic-ui Custom white header
+.ui.white.header {
+  color: $white !important;
+}

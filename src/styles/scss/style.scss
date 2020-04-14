@@ -1,0 +1,21 @@
+@import '_includes/_variables';
+@import '_includes/mixins';
+@import '_includes/type';
+@import '_includes/login';
+@import '_includes/wrapper.scss';
+@import 'component/navs.scss';
+@import 'component/introForm.scss';
+@import 'component/upload-list.scss';
+@import '_includes/utils.scss';
+@import '_includes/icon';
+@import '_includes/background-colors';
+
+html,
+body {
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: $font-family-base;
+}

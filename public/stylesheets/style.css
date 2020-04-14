@@ -1,0 +1,30 @@
+@font-face {
+  font-family: digitalFont;
+  src: url(digital-7.ttf);
+}
+body {
+  padding: 5px;
+  font-size: 13px;
+  font-family: initial;
+  background-color: #e6e6e6;
+}
+
+a {
+  color: #00b7ff;
+}
+.progress-status {
+  /* background-color: green; */
+  /* color: white; */
+  padding: 5px;
+  /* opacity: 0.8; */
+  border-radius: 100px;
+  font-size: 20px;
+  /* font-family: digitalFont; */
+}
+
+.center-element {
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+}

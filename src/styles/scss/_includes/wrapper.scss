@@ -1,0 +1,88 @@
+// nav and grid spacing
+.ui.fixed.menu + .main-container {
+  padding-top: 4rem;
+  min-height: calc(100vh - 62px);
+}
+
+.sd-intro {
+  background-color: #36295F;
+  background-image: url('/images/Wave-front.svg'), url('/images/wave-back.svg');
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  margin: 44px 0 0;
+  min-height: 500px;
+}
+
+.sd-footer {
+  border-top: 1px solid $gray-lighter;
+  color: $gray-light;
+  margin-top: 2rem;
+  padding: 1rem;
+
+  .nav-link {
+    color: $gray-light;
+    padding: 0 1em;
+
+    &:hover,
+    &:focus {
+      color: $gray-dark;
+    }
+  }
+}
+
+.sd-settings {
+  min-height: 460px;
+}
+
+.cloud-provider {
+  /*border: 2px dashed $brand-primary;
+  border-radius: 10px;
+  padding: 1.5rem 2rem;
+  margin: 0 auto 2rem;
+  width: 350px;*/
+
+  > a {
+    display: inline-block;
+    margin-right: .85rem;
+    position: relative;
+    border: 1px solid darken($brand-primary, 20%);
+    border-radius: 8px;
+    padding: .65rem;
+
+    &:hover {
+      background: darken($brand-primary, 20%);
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    .icon {
+      transition: fill .3s;
+    }
+  }
+
+  &__icon-active {
+    position: absolute;
+    right: -15px;
+    top: -8px;
+    border: 2px solid #36295F;
+    border-radius: 100%;
+  }
+}
+
+.sd-cookie-alert {
+  position: fixed;
+  top: 65px;
+  width: 240px;
+  padding: 1rem;
+  background: #00b5ad;
+  color: $white;
+  right: 15px;
+  border-radius: 6px;
+
+  a {
+    color: inherit;
+    text-decoration: underline;
+  }
+}

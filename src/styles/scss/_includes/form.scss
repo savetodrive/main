@@ -1,0 +1,47 @@
+.rounded-input {
+    border: 2px solid lighten($dark-blue, 7%);
+    border-radius: 1.3rem;
+    padding: 0;
+
+    .form-control,
+    .btn {
+        border: 0;
+        border-radius: 1.3rem;
+    }
+
+    .input-group-addon {
+        border: 0;
+        border-radius: 1.3rem 0 0 1.3rem;
+        font-size: .8rem;
+        font-weight: 300;
+
+        &--white {
+            background-color: $white;
+        }
+
+        &--primary {
+            background-color: lighten($brand-primary, 20%);
+            color: $white;
+        }
+
+        &--equal-width {
+            width: 6rem;
+        }
+    }
+}
+
+.custom-checkbox--sm {
+    display: inline-block;
+
+    > .custom-control-indicator,
+    > .custom-control-description {
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+
+.form-group label.text-right {
+    @include media-breakpoint-only(xs) {
+        text-align: left !important;
+    }
+}

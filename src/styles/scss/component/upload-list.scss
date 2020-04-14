@@ -1,0 +1,121 @@
+.upload-list {
+  $upload-list-padding: 1rem;
+
+  background-color: $white;
+  box-shadow: 0 2px 3px 1px rgba($black, .2);
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 0 1rem;
+
+  &__item {
+    display: flex;
+    flex: 1 100%;
+    flex-flow: row wrap;
+    position: relative;
+
+    &:not(:first-child) {
+      border-top: 1px solid $gray-lighter;
+    }
+
+    &__notask {
+      width: 100%;
+    }
+
+    &__info,
+    &__extra {
+      color: $gray-darker;
+      padding: 1rem;
+    }
+
+    &__info {
+      background-color: $white;
+      flex: 1 1 0;
+    }
+
+    &__extra {
+      background-color: #fbfbfb;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 250px;
+
+      @media (max-width: 768px) {
+        flex: 1 100%;
+        width: auto;
+      }
+    }
+
+    &__row {
+      align-items: center;
+      display: flex;
+      flex: 1 auto;
+      flex-flow: row wrap;
+      justify-content: flex-start;
+      margin: 0 0 .8rem;
+    }
+
+    .ui.progress {
+      margin: 1em 0 1.5em;
+      width: 90%;
+
+      > .label {
+        color: $gray-light;
+        font-weight: $font-normal;
+        margin-top: 0;
+        top: -110%;
+        text-align: right;
+        width: 110%;
+      }
+    }
+  }
+
+  &__filename {
+    color: $brand-primary;
+    cursor: pointer;
+    display: block;
+    font-weight: $font-bold;
+    margin: 0 0 .5rem;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: darken ($brand-primary, 10%);
+    }
+  }
+
+  &__title {
+    display: flex;
+    flex-flow: row wrap;
+    font-size: .9rem;
+    font-weight: $font-bold;
+    margin: 0 0 .5rem;
+
+    > span {
+      flex: 1 1 50%;
+      width: 50%;
+
+      &:first-child {
+        font-weight: $font-normal;
+        text-align: right;
+        padding-right: .5rem;
+      }
+    }
+
+    &--big {
+      font-size: 1.125rem;
+      font-weight: $font-normal;
+    }
+
+    &--normal-weight {
+      font-weight: $font-normal;
+    }
+  }
+
+  &__filetype {
+    align-content: flex-start;
+    border: 1px solid $gray-lighter;
+    border-radius: 6px;
+    display: inline-block;
+    padding: .3rem .5rem;
+  }
+}

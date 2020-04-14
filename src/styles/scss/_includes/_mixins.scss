@@ -1,0 +1,19 @@
+@mixin badge-outline-variant($color) {
+    box-shadow: 0 0 0 1px $color inset;
+    background-color: transparent;
+    color: $color;
+
+    &[href] {
+        @include hover-focus {
+            background-color: darken($color, 10%);
+            color: $white;
+        }
+    }
+}
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  // IE8 filter
+  $opacity-ie: ($opacity * 100);
+  filter: alpha(opacity=$opacity-ie);
+}

@@ -1,0 +1,25 @@
+.bg-secondary {
+  background: #f6f6f6;
+}
+
+@mixin bg-color-variant($className, $color) {
+  #{$className} {
+    background-color: $color;
+  }
+
+  a#{$className} {
+    &:hover,
+    &:focus {
+      background-color: darken($color, 10%);
+    }
+  }
+}
+
+@include bg-color-variant('.bg-white', $white);
+@include bg-color-variant('.bg-muted', $gray-light);
+@include bg-color-variant('.bg-primary', darken($brand-primary, 10%));
+@include bg-color-variant('.bg-info', $brand-info);
+@include bg-color-variant('.bg-warning', $brand-warning);
+@include bg-color-variant('.bg-danger', $brand-danger);
+@include bg-color-variant('.bg-success', $brand-success);
+@include bg-color-variant('.bg-dark-blue', #36295F);

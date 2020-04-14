@@ -1,0 +1,11 @@
+html
+  head
+    script
+      | (function closeMe() {
+      |        window.opener.postMessage({
+      |            type: 'CLOSE',
+      |            query: window.location.search,
+      |        }, window.location.protocol + '//'+window.location.host);
+      |    })();
+  body
+    p Please wait...

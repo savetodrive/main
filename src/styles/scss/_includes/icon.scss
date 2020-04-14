@@ -1,0 +1,42 @@
+@mixin svg-icon($class, $fill-color) {
+  .#{$class},
+  a > .#{$class} {
+    fill: $fill-color;
+  }
+
+  a:hover > .#{$class} {
+    fill: lighten($fill-color, 45%);
+  }
+}
+
+.sd-icon {
+  display: inline-block;
+  height: 1em;
+  margin: 2px 5px;
+  vertical-align: middle;
+  width: 1em;
+
+  &--large {
+    height: 3em;
+    width: 3em;
+  }
+
+  &--medium {
+    height: 25px;
+    margin: 2px 8px;
+    width: 25px;
+  }
+
+  &--small {
+    height: .75em;
+    width: .75em;
+  }
+}
+
+// SVG icon colors and anchor color state
+@include svg-icon($class: sd-icon--blue, $fill-color: $brand-primary);
+@include svg-icon($class: sd-icon--white, $fill-color: $white);
+@include svg-icon($class: sd-icon--green, $fill-color: $green);
+@include svg-icon($class: sd-icon--green-light, $fill-color: $greenLight);
+@include svg-icon($class: sd-icon--muted, $fill-color: $gray-light);
+@include svg-icon($class: sd-icon--info, $fill-color: $brand-info);

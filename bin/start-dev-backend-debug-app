@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+set -eu
+exec node_modules/.bin/nodemon --inspect=0.0.0.0:9230 server/core/app.js --watch server/core
+

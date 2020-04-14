@@ -1,0 +1,13 @@
+{
+  "apps": [{
+    "name": "webapp",
+    "script": "server/core/app.js",
+    "cwd": "/home/savetodrive/webapp/current",
+    "error_file": "/home/savetodrive/webapp/logs/app.err.log",
+    "out_file": "/home/savetodrive/webapp/logs/app.out.log",
+    "exec_mode": "cluster",
+    "instances": 1,
+    "wait_ready": true,
+    "kill_timeout" : 3000
+  }]
+}

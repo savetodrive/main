@@ -1,0 +1,71 @@
+// Base font size
+$font-size-base: 14px;
+
+// Start with assigning color names to specific hex values.
+$white: #fff !default;
+$black: #000 !default;
+$red: #E9512F;
+$orange: #f0ad4e !default;
+$yellow: #ffd500 !default;
+$green: #5cb85c !default;
+$blue: #0275d8 !default;
+$dark-blue: #36295F;
+$teal: #5bc0de !default;
+$pink: #ff5b77 !default;
+$purple: #613d7c !default;
+
+// Reassign color vars to semantic color scheme
+$brand-primary: $blue;
+$brand-success: $green;
+$brand-info: #8D7CC0;
+$brand-warning: $orange;
+$brand-danger: $red;
+$brand-inverse: $gray-dark;
+
+// font
+$font-family-base: 'Oxygen', sans-serif;
+
+// Placeholder
+$input-color-placeholder: lighten($gray-light, 30%);
+
+// Progress bars
+
+$progress-height: 1rem !default;
+$progress-font-size: .6rem;
+$progress-bg: $white;
+$progress-border-radius: 2rem;
+$progress-box-shadow: inset 0 .1rem .1rem rgba($black, .1) !default;
+$progress-bar-color: $white !default;
+$progress-bar-bg: $brand-primary !default;
+$progress-bar-animation-timing: 1s linear infinite !default;
+
+// Buttons
+
+$btn-secondary-color: $body-color;
+$btn-secondary-bg: $gray-lighter;
+$btn-secondary-border: $gray-lighter;
+
+$btn-danger-bg: lighten($brand-danger, 5%);
+$btn-danger-border: lighten($brand-danger, 5%);
+
+// Badges
+
+$badge-default-bg: darken($gray-lighter, 5%);
+
+// Navs
+
+$nav-item-margin:               .2rem !default;
+$nav-item-inline-spacer:        1rem !default;
+$nav-link-padding:              .5em 1em !default;
+$nav-link-hover-bg:             $gray-lighter !default;
+$nav-disabled-link-color:       $gray-light !default;
+
+$nav-tabs-border-color:                       #ddd !default;
+$nav-tabs-border-width:                       $border-width !default;
+$nav-tabs-border-radius:                      $border-radius !default;
+$nav-tabs-link-hover-border-color:            transparent;
+$nav-tabs-active-link-hover-color:            $body-color;
+$nav-tabs-active-link-hover-bg:               $brand-primary;
+$nav-tabs-active-link-hover-border-color:     transparent;
+$nav-tabs-justified-link-border-color:        #ddd !default;
+$nav-tabs-justified-active-link-border-color: $body-bg !default;

@@ -1,0 +1,19 @@
+.navbar-inverse.bg-primary {
+    background-color: darken($dark-blue, 3%) !important;
+
+    .navbar-nav {
+        .nav-link {
+            color: $brand-info;
+            padding: 0 .5rem;
+
+            &:hover,
+            &:focus {
+                color: lighten($brand-info, 20%);
+            }
+        }
+
+        .nav-item:not(.last-item) .nav-link {
+            border-right: 1px solid $brand-info;
+        }
+    }
+}

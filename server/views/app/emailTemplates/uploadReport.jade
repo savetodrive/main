@@ -1,0 +1,159 @@
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width')
+    link(href='https://fonts.googleapis.com/css?family=Oxygen', rel='stylesheet')
+    // [if !mso] <!
+    link(href='https://fonts.googleapis.com/css?family=Oxygen', rel='stylesheet')
+    // <![endif]
+    title Success Report
+    style(type='text/css').
+      html,
+      body {
+        background: #f2f2f2;
+        font-family: 'Oxygen', sans-serif;
+        margin: 0 auto !important;
+        padding: 0 !important;
+        height: 100% !important;
+        width: 100% !important;
+        font-size: 14px;
+      }
+
+      * {
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+      }
+
+      div[style*="margin: 16px 0"] {
+        margin: 0 !important;
+      }
+
+      table,
+      td {
+        mso-table-lspace: 0pt !important;
+        mso-table-rspace: 0pt !important;
+      }
+
+      table {
+        border-spacing: 0 !important;
+        border-collapse: collapse !important;
+        table-layout: fixed !important;
+        margin: 0 auto !important;
+      }
+
+      img {
+        line-height: 100%;
+        outline: none;
+        text-decoration: none;
+        -ms-interpolation-mode: bicubic;
+        border: 0;
+        max-width: 100%;
+        height: auto;
+        vertical-align: middle;
+      }
+
+      .yshortcuts a {
+        border-bottom: none !important;
+      }
+
+      a[x-apple-data-detectors] {
+        color: inherit !important;
+        text-decoration: none !important;
+        font-size: inherit !important;
+        font-family: inherit !important;
+        font-weight: inherit !important;
+        line-height: inherit !important;
+      }
+
+      @media screen and (min-width: 600px) {
+        .ios-responsive-grid {
+          display: -webkit-box !important;
+          display: flex !important;
+        }
+
+        .ios-responsive-grid__unit {
+          float: left;
+        }
+      }
+  body
+    table(cellpadding='0', cellspacing='0', border='0', width='100%')
+      tbody
+        tr
+          td &nbsp;
+        tr
+          td(style='background-color: #f2f2f2;')
+            table(cellpadding='0', cellspacing='0', border='0', style='border-collapse:collapse; width:600px; margin:0 auto; color: #333333;')
+              tr
+                td(style='padding: 30px 0;')
+                  table(cellpadding='0', align='center', cellspacing='0', border='0', style='width: 100%;  color: #333333; text-align: center;')
+                    tr
+                      td
+                        a(href='#{host}', title='logo')
+                          img(src='#{host}/images/logo-full-color.png', alt='Savetodrive logo', width='200', height='31')
+              tr
+                td
+                  table(cellpadding='0', cellspacing='0', border='0', style='width: 100%; background-color: #ffffff; padding:50px ;font-size: 14px; color: #333333; border-radius:3px; ')
+                    tr
+                      td(style='padding:50px; padding-bottom:0; mso-line-height-rule: exactly; line-height:1.8;')
+                        strong Hello There,
+                        br
+                        br
+                        |            The file you requested to upload from
+                        br
+                        a(href='#', style='text-decoration: underline; color: #4183c4;')
+                          | #{url}
+                        br
+                        |            has been #{status}.
+                        br
+                        br
+                        |            Here is your upload report.
+                    tr
+                      td(style='padding:50px; padding-top:20px; ')
+                        table(cellpadding='0', align='center', cellspacing='0', border='0', style='width: 100%;  color: #333333; font-size: 14px; text-align: left; mso-line-height-rule: exactly; line-height:1.8;')
+                          tr
+                            td(style='border-bottom:1px #dbdbdb solid; padding-bottom: 5px; padding-top:5px; color: #bbbbbb; width: 100px;')
+                              | ID
+                            td(style='border-bottom:1px #dbdbdb solid; padding-bottom: 5px; padding-top:5px;')
+                              | #{_id}
+                          tr
+                            td(style='border-bottom:1px #dbdbdb solid; padding-bottom: 5px; padding-top:5px; color:#bbbbbb;')
+                              | Name
+                            td(style='border-bottom:1px #dbdbdb solid; padding-bottom: 5px; padding-top:5px;')
+                              | #{meta.name}
+                          tr
+                            td(style='border-bottom:1px #dbdbdb solid; padding-bottom: 5px; padding-top:5px; color:#bbbbbb;')
+                              | Type
+                            td(style='border-bottom:1px #dbdbdb solid; padding-bottom: 5px; padding-top:5px;')
+                              | #{meta.type}
+                          tr
+                            td(style='border-bottom:1px #dbdbdb solid; padding-bottom: 5px; padding-top:5px; color:#bbbbbb;')
+                              | Size
+                            td(style='border-bottom:1px #dbdbdb solid; padding-bottom: 5px; padding-top:5px;')
+                              | #{meta.size}
+                          tr
+                            td(style='border-bottom:1px #dbdbdb solid; padding-bottom: 5px; padding-top:5px; color:#bbbbbb;')
+                              | Status
+                            td(style='border-bottom:1px #dbdbdb solid; padding-bottom: 5px; padding-top:5px;')
+                              | #{status}
+                          tr
+                            td(style='border-bottom:1px #dbdbdb solid; padding-bottom: 5px; padding-top:5px; color:#bbbbbb;')
+                              | Service
+                            td(style='border-bottom:1px #dbdbdb solid; padding-bottom: 5px; padding-top:5px;')
+                              | #{service}
+                          tr
+                            td(style='border-bottom:1px #dbdbdb solid; padding-bottom: 5px; padding-top:5px; color:#bbbbbb;')
+                              | Process Time
+                            td(style='border-bottom:1px #dbdbdb solid; padding-bottom: 5px; padding-top:5px;')
+                              | #{process_time}
+                          tr
+                            td(style='border-bottom:1px #dbdbdb solid; padding-bottom: 5px; padding-top:5px; color:#bbbbbb;')
+                              | Message
+                            td(style='border-bottom:1px #dbdbdb solid; padding-bottom: 5px; padding-top:5px;')
+                              | #{message || 'N/A'}
+              tr
+                td(style='padding: 20px 0 30px; text-align: center; color: #8f8f8f; font-family: sans-serif; font-size: 12px; mso-line-height-rule: exactly; line-height: 20px;')
+                  | Made with &hearts; by the SavetoDrive team.
+                  br
+                  |      Thank you for using our service.
+        tr
+          td &nbsp;

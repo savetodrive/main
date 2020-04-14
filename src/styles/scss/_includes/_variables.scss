@@ -1,0 +1,52 @@
+// font
+$font-family-base: 'Oxygen', sans-serif;
+
+// base Font size
+$font-size-base: 16px;
+
+//== Colors
+// Neutral Grays
+$gray-base: #000 !default;
+$gray-darker: lighten($gray-base, 13.5%) !default; // #222
+$gray-dark: lighten($gray-base, 20%) !default; // #333
+$gray: lighten($gray-base, 33.5%) !default; // #555
+$gray-light: lighten($gray-base, 46.7%) !default; // #777
+$gray-lighter: #dbdbdb !default; // #dbdbdb
+
+// Start with assigning color names to specific hex values.
+$white: #fff !default;
+$black: #000 !default;
+$red: #E9512F;
+$orange: #f0ad4e !default;
+$yellow: #ffd500 !default;
+$green: #5cb85c !default;
+$greenLight: #70ed70 !default;
+$blue: #816eb9;
+$dark-blue: #36295F;
+$teal: #5bc0de !default;
+$pink: #ff5b77 !default;
+$purple: #613d7c !default;
+
+// Reassign color vars to semantic color scheme
+$brand-primary: $blue;
+$brand-success: $green;
+$brand-info: #8D7CC0;
+$brand-warning: $orange;
+$brand-danger: $red;
+$brand-inverse: $gray-dark;
+
+// Font Weights
+$font-light: 300;
+$font-normal: 400;
+$font-medium: 500;
+$font-semi-bold: 600;
+$font-bold: 700;
+$font-extra-bold: 800;
+
+// Footer height
+$footerHeight: 77px;
+$footerHeightTablet: 131px;
+
+// Close
+$close-font-weight: 600;
+$close-color: #666;

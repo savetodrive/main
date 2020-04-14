@@ -1,0 +1,61 @@
+// Custom outline badges
+
+.badge-outline-default {
+    @include badge-outline-variant($badge-default-bg);
+}
+
+.badge-outline-primary {
+    @include badge-outline-variant($badge-primary-bg);
+}
+
+.badge-outline-success {
+    @include badge-outline-variant($badge-success-bg);
+}
+
+.badge-outline-info {
+    @include badge-outline-variant($badge-info-bg);
+}
+
+.badge-outline-warning {
+    @include badge-outline-variant($badge-warning-bg);
+}
+
+.badge-outline-danger {
+    @include badge-variant($badge-danger-bg);
+}
+
+.badge {
+    .close {
+        color: $white;
+        display: inline-block;
+        float: none;
+        font-size: .99em;
+        font-weight: $font-weight-normal;
+        margin-left: 2px;
+        opacity: .8;
+        position: relative;
+        top: -1px;
+        vertical-align: baseline;
+
+        @include hover-focus {
+            opacity: 1;
+        }
+    }
+
+    &[class*='badge-outline'] .close {
+        color: inherit;
+    }
+}
+
+.badge-default {
+    color: $gray-light;
+}
+
+.sd-badges {
+    font-size: 1.2rem;
+    padding: .5rem 0;
+
+    .badge {
+        margin-right: .5rem;
+    }
+}

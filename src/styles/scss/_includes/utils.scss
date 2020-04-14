@@ -1,0 +1,70 @@
+/*
+.sd-border-bottom {
+    border-bottom: 1px solid $gray-lighter;
+}
+*/
+
+/**
+ * Margin's class name and margin position need to make sense to identify what kind of margin it is
+ */
+@mixin spacing($className, $marginPosition) {
+  @for $i from 1 through 12 {
+    #{$className}-#{$i} {
+      #{$marginPosition}: #{$i * .5}rem !important;
+    }
+  }
+}
+
+/**
+ * margin specs
+ */
+@include spacing('.mt', 'margin-top'); // top margin
+@include spacing('.mr', 'margin-right'); // right margin
+@include spacing('.mb', 'margin-bottom'); // bottom margin
+@include spacing('.ml', 'margin-left'); // left margin
+
+/**
+ * padding spacing
+ */
+@include spacing('.pt', 'padding-top'); // top margin
+@include spacing('.pr', 'padding-right'); // right margin
+@include spacing('.pb', 'padding-bottom'); // bottom margin
+@include spacing('.pl', 'padding-left'); // left margin
+
+/**
+  Text Size
+ */
+.small {
+  font-size: 85%;
+}
+
+.close {
+  background-color: transparent;
+  border: 0;
+  box-shadow: none;
+  color: $close-color;
+  float: right;
+  font-size: ($font-size-base * 1.5);
+  font-weight: $close-font-weight;
+  line-height: 1;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  z-index: 1;
+
+  @include opacity(.2);
+
+  &:hover,
+  &:focus {
+    color: $close-color;
+    text-decoration: none;
+    cursor: pointer;
+    @include opacity(.5);
+  }
+}
+
+// Text-overflow ellipsis
+.text-overflow-hidden {
+  overflow: hidden;
+  text-overflow: ellipsis;;
+}
